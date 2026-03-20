@@ -25,14 +25,16 @@
 
     <!-- !HEADER SECTION START -->
     <section
-        class="bg-[rgb(255,255,255, 0.56)] backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-[rgba(120,118,118,1)] sticky top-0">
-        <div class="max-w-[1200px] mx-auto! px-3.75 flex items-center justify-between py-4">
-            <div class="logo">
+        class="bg-[rgb(255,255,255,0.56)] backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-[rgba(120,118,118,1)] sticky top-0 z-50">
+        <div class="max-w-[1200px] mx-auto px-4 md:px-3.75 flex items-center justify-between py-4">
+
+            <div class="logo shrink-0">
                 <a href="index.html">
-                    <img src="assets//img//logo.png" alt="logo image">
+                    <img src="assets/img/logo.png" alt="logo image" class="h-8 md:h-auto">
                 </a>
             </div>
-            <div class="menu">
+
+            <div class="menu hidden lg:block">
                 <nav>
                     <ul class="flex items-center gap-5">
                         <li
@@ -50,340 +52,373 @@
                     </ul>
                 </nav>
             </div>
-            <div class="button flex items-center gap-5">
-                <a href="#"
-                    class="font-[Poppins] text-[15px] font-medium border border-black py-2 px-4 rounded-full hover:bg-black hover:text-white duration-300 ease-in-out">Sign
-                    in</a>
-                <a href="#"
-                    class="font-[Poppins] text-[15px] font-medium border border-black py-2 px-4 rounded-full bg-black text-white hover:bg-transparent hover:text-black duration-300 ease-in-out">Get
-                    Started</a>
+
+            <div class="flex items-center gap-3 md:gap-5">
+                <div class="button hidden md:flex items-center gap-3">
+                    <a href="#"
+                        class="font-[Poppins] text-[14px] md:text-[15px] font-medium border border-black py-1.5 px-3 md:py-2 md:px-4 rounded-full hover:bg-black hover:text-white duration-300 ease-in-out">
+                        Sign in
+                    </a>
+                    <a href="#"
+                        class="font-[Poppins] text-[14px] md:text-[15px] font-medium border border-black py-1.5 px-3 md:py-2 md:px-4 rounded-full bg-black text-white hover:bg-transparent hover:text-black duration-300 ease-in-out">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="lg:hidden flex items-center">
+                    <button class="text-xl md:text-2xl text-black p-2 focus:outline-none">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
             </div>
+
         </div>
     </section>
     <!-- !HEADER SECTION END -->
 
     <!-- !HERO/BANNER SECTION START -->
-    <section class="my-10">
-        <div class="max-w-[1200px] mx-auto! px-3.75">
-            <div class="flex flex-col items-center justify-center ">
-                <span class="bg-[#f2f9ff] py-2 px-4 rounded-full text-[#2083ff] font-medium">v2.0: Now with Agentic
-                    Core</span>
-                <h1 class="font-[oswald] text-[120px] w-[780px] font-bold text-center leading-[130px] my-10 ">Build the
+    <section class="my-10 px-4 md:px-0">
+        <div class="max-w-[1200px] mx-auto px-3.75">
+            <div class="flex flex-col items-center justify-center">
+                <span
+                    class="bg-[#f2f9ff] py-2 px-4 rounded-full text-[#2083ff] font-medium text-xs md:text-base text-center">
+                    v2.0: Now with Agentic Core
+                </span>
+
+                <h1
+                    class="font-[oswald] text-[40px] sm:text-[60px] md:text-[80px] lg:text-[120px] w-full lg:w-[850px] font-bold text-center leading-[50px] sm:leading-[70px] md:leading-[90px] lg:leading-[130px] my-6 md:my-10">
+                    Build the
                     <span
-                        class="bg-[linear-gradient(131deg,rgba(32,131,255,1)_13%,rgba(181,96,243,1)_60%)] bg-clip-text text-transparent">Agentic
-                        Future.</span>
+                        class="bg-[linear-gradient(131deg,rgba(32,131,255,1)_13%,rgba(181,96,243,1)_60%)] bg-clip-text text-transparent">
+                        Agentic Future.
+                    </span>
                 </h1>
-                <p class="text-[22px] font-[Popins] w-[580px] text-center text-[#8c8b8b]">Nexus is the world's most
-                    advanced infrastructure for building, scaling, and deploying autonomous AI agents in
-                    production.</p>
-                <div class="button flex items-center gap-5 mt-10 mb-15">
+
+                <p class="text-[15px] md:text-[22px] font-[Popins] w-full md:w-[580px] text-center text-[#8c8b8b]">
+                    Nexus is the world's most advanced infrastructure for building, scaling, and deploying autonomous AI
+                    agents in production.
+                </p>
+
+                <div
+                    class="flex flex-row items-center justify-center gap-3 md:gap-5 mt-8 md:mt-10 mb-10 md:mb-15 w-full">
                     <a href="#"
-                        class="font-[Poppins] text-[18px] font-medium border border-black py-5 px-8 rounded-full hover:bg-black hover:text-white duration-300 ease-in-out flex items-center justify-center gap-2 hover:gap-3 w-[250px]">Deploy
-                        Agent
+                        class="font-[Poppins] text-[13px] md:text-[16px] font-medium border border-black py-2.5 px-4 md:py-4 md:px-8 rounded-full hover:bg-black hover:text-white duration-300 ease-in-out flex items-center justify-center gap-2 hover:gap-3 shrink-0">
+                        Deploy Agent
                         <span><i class="fa-solid fa-arrow-right"></i></span>
                     </a>
                     <a href="#"
-                        class="font-[Poppins] text-[15px] font-medium border border-black  py-5 px-12 rounded-full bg-black text-white hover:bg-transparent hover:text-black duration-300 ease-in-out">Read
-                        the Docs
+                        class="font-[Poppins] text-[13px] md:text-[15px] font-medium border border-black py-2.5 px-5 md:py-4 md:px-10 rounded-full bg-black text-white hover:bg-transparent hover:text-black duration-300 ease-in-out shrink-0 text-center">
+                        Read the Docs
                     </a>
                 </div>
             </div>
+
             <div
-                class="flex flex-col items-center justify-center bg-gradient-to-t from-[#f2f9ff] via-[#b9d6ef] to-transparent py-15 px-[100px] rounded-md">
-                <img src="assets//img/code.png" class="rounded-md" alt="code background image">
+                class="flex flex-col items-center justify-center bg-linear-to-t from-[#f2f9ff] via-[#b9d6ef] to-transparent py-8 md:py-15 px-4 md:px-[100px] rounded-xl">
+                <img src="assets/img/code.png" class="rounded-md w-full shadow-lg" alt="code background image">
             </div>
         </div>
     </section>
     <!-- !HERO/BANNER SECTION END -->
 
     <!-- !BRAND  SECTION START -->
-    <section class=" mb-10">
-        <div class="max-w-[1200px] mx-auto! px-3.75">
-            <div class="flex items-center justify-between gap-5">
-                <span class="text-[30px] font-bold font-[oswald] text-[#a2a2a2] ">STARK</span>
-                <span class="text-[30px] font-bold font-[oswald] text-[#a2a2a2] ">CYBERDYNE</span>
-                <span class="text-[30px] font-bold font-[oswald] text-[#a2a2a2] ">WAYNE</span>
-                <span class="text-[30px] font-bold font-[oswald] text-[#a2a2a2] ">OSCORP</span>
-                <span class="text-[30px] font-bold font-[oswald] text-[#a2a2a2] ">TYRELL</span>
-                <span class="text-[30px] font-bold font-[oswald] text-[#a2a2a2] ">WAYNE</span>
+    <section class="mb-10 px-4">
+        <div class="max-w-[1200px] mx-auto px-3.75">
+            <div class="flex flex-wrap items-center justify-center md:justify-between gap-6 md:gap-5">
+                <span class="text-[20px] md:text-[30px] font-bold font-[oswald] text-[#a2a2a2]">STARK</span>
+                <span class="text-[20px] md:text-[30px] font-bold font-[oswald] text-[#a2a2a2]">CYBERDYNE</span>
+                <span class="text-[20px] md:text-[30px] font-bold font-[oswald] text-[#a2a2a2]">WAYNE</span>
+                <span class="text-[20px] md:text-[30px] font-bold font-[oswald] text-[#a2a2a2]">OSCORP</span>
+                <span class="text-[20px] md:text-[30px] font-bold font-[oswald] text-[#a2a2a2]">TYRELL</span>
+                <span class="text-[20px] md:text-[30px] font-bold font-[oswald] text-[#a2a2a2]">WAYNE</span>
             </div>
         </div>
     </section>
     <!-- !BRAND  SECTION END -->
 
     <!-- !BUILD/SERVICE SECTION START -->
-    <section class="py-28 bg-[#f8fafc]">
-        <div class="max-w-[1200px] mx-auto! px-3.75">
+    <section class="py-16 md:py-28 bg-[#f8fafc] px-4 md:px-0">
+        <div class="max-w-[1200px] mx-auto px-3.75">
             <div class="text-center">
-                <h2 class="font-[oswald] text-[55px] font-semibold ">Built for the <span
+                <h2 class="font-[oswald] text-[32px] md:text-[55px] font-semibold leading-tight">
+                    Built for the <span
                         class="bg-[linear-gradient(131deg,rgba(32,131,255,1)_13%,rgba(181,96,243,1)_60%)] bg-clip-text text-transparent">Next
-                        Era.</span></h2>
-                <p class="text-[20px] font-[poppins] pt-4 w-[450px] mx-auto">Nexus provides the primitive building
-                    blocks for the autonomous world.
+                        Era.</span>
+                </h2>
+                <p class="text-[16px] md:text-[20px] font-[poppins] pt-4 w-full md:w-[450px] mx-auto text-[#4b5563]">
+                    Nexus provides the primitive building blocks for the autonomous world.
                 </p>
             </div>
-            <div class="mt-15 flex flex-wrap gap-4 items-center justify-">
+
+            <div class="mt-10 md:mt-15 flex flex-wrap gap-6 items-stretch justify-center">
 
                 <div
-                    class="w-[350px] border border-[#c7c6c6] bg-[#ffffff] py-10 px-8 rounded-xl cursor-pointer hover:border-[#0a84ff] duration-300 ">
+                    class="w-full sm:w-[48%] lg:w-[31%] border border-[#c7c6c6] bg-[#ffffff] py-8 md:py-10 px-6 md:px-8 rounded-xl cursor-pointer hover:border-[#0a84ff] duration-300 shadow-sm hover:shadow-md">
                     <div>
                         <img class="w-[35px]" src="assets/img/processor.png" alt="processor">
                     </div>
-
                     <div class="info">
-                        <h5 class="font-[oswald] text-[20px] font-medium py-5">Edge Inference</h5>
-                        <p>Deploy models to 200+ edge locations for sub-20ms latency worldwide.</p>
+                        <h5 class="font-[oswald] text-[18px] md:text-[20px] font-medium py-4 md:py-5">Edge Inference
+                        </h5>
+                        <p class="text-[14px] md:text-base text-[#64748b]">Deploy models to 200+ edge locations for
+                            sub-20ms
+                            latency worldwide.</p>
                     </div>
                 </div>
 
                 <div
-                    class="w-[350px] border border-[#c7c6c6] bg-[#ffffff] py-10 px-8 rounded-xl cursor-pointer hover:border-[#0a84ff] duration-300 ">
+                    class="w-full sm:w-[48%] lg:w-[31%] border border-[#c7c6c6] bg-[#ffffff] py-8 md:py-10 px-6 md:px-8 rounded-xl cursor-pointer hover:border-[#0a84ff] duration-300 shadow-sm hover:shadow-md">
                     <div>
                         <img class="w-[35px]" src="assets/img/hosting.png" alt="memory image">
                     </div>
-
                     <div class="info">
-                        <h5 class="font-[oswald] text-[20px] font-medium py-5">Agentic Memory
+                        <h5 class="font-[oswald] text-[18px] md:text-[20px] font-medium py-4 md:py-5">Agentic Memory
                         </h5>
-                        <p>Persistent, vector-based long-term memory for every agent you build</p>
+                        <p class="text-[14px] md:text-base text-[#64748b]">Persistent, vector-based long-term memory for
+                            every agent you build</p>
                     </div>
                 </div>
 
                 <div
-                    class="w-[350px] border border-[#c7c6c6] bg-[#ffffff] py-10 px-8 rounded-xl cursor-pointer hover:border-[#0a84ff] duration-300 ">
+                    class="w-full sm:w-[48%] lg:w-[31%] border border-[#c7c6c6] bg-[#ffffff] py-8 md:py-10 px-6 md:px-8 rounded-xl cursor-pointer hover:border-[#0a84ff] duration-300 shadow-sm hover:shadow-md">
                     <div>
                         <img class="w-[35px]" src="assets//img/cyber-security.png" alt="cyber-security image">
                     </div>
-
                     <div class="info">
-                        <h5 class="font-[oswald] text-[20px] font-medium py-5">Enterprise Security
+                        <h5 class="font-[oswald] text-[18px] md:text-[20px] font-medium py-4 md:py-5">Enterprise
+                            Security
                         </h5>
-                        <p>SOC2 Type II compliant infrastructure with built-in PII redaction.
-                        </p>
+                        <p class="text-[14px] md:text-base text-[#64748b]">SOC2 Type II compliant infrastructure with
+                            built-in PII redaction.</p>
                     </div>
                 </div>
 
                 <div
-                    class="w-[350px] border border-[#c7c6c6] bg-[#ffffff] py-10 px-8 rounded-xl cursor-pointer hover:border-[#0a84ff] duration-300 ">
+                    class="w-full sm:w-[48%] lg:w-[31%] border border-[#c7c6c6] bg-[#ffffff] py-8 md:py-10 px-6 md:px-8 rounded-xl cursor-pointer hover:border-[#0a84ff] duration-300 shadow-sm hover:shadow-md">
                     <div>
                         <img class="w-[35px]" src="assets/img/microchip.png" alt="microchip image">
                     </div>
-
                     <div class="info">
-                        <h5 class="font-[oswald] text-[20px] font-medium py-5">Observability
-                        </h5>
-                        <p>Real-time tracing and cost monitoring for every token and tool call.
-                        </p>
+                        <h5 class="font-[oswald] text-[18px] md:text-[20px] font-medium py-4 md:py-5">Observability</h5>
+                        <p class="text-[14px] md:text-base text-[#64748b]">Real-time tracing and cost monitoring for
+                            every
+                            token and tool call.</p>
                     </div>
                 </div>
 
                 <div
-                    class="w-[350px] border border-[#c7c6c6] bg-[#ffffff] py-10 px-8 rounded-xl cursor-pointer hover:border-[#0a84ff] duration-300 ">
+                    class="w-full sm:w-[48%] lg:w-[31%] border border-[#c7c6c6] bg-[#ffffff] py-8 md:py-10 px-6 md:px-8 rounded-xl cursor-pointer hover:border-[#0a84ff] duration-300 shadow-sm hover:shadow-md">
                     <div>
                         <img class="w-[35px]" src="assets/img/web-programming.png" alt="coding image">
                     </div>
-
                     <div class="info">
-                        <h5 class="font-[oswald] text-[20px] font-medium py-5">SDK First
-                        </h5>
-                        <p>Type-safe SDKs for TypeScript, Python, and Go. Built for developers.
-                            .</p>
+                        <h5 class="font-[oswald] text-[18px] md:text-[20px] font-medium py-4 md:py-5">SDK First</h5>
+                        <p class="text-[14px] md:text-base text-[#64748b]">Type-safe SDKs for TypeScript, Python, and
+                            Go.
+                            Built for developers.</p>
                     </div>
                 </div>
 
                 <div
-                    class="w-[350px] border border-[#c7c6c6] bg-[#ffffff] py-10 px-8 rounded-xl cursor-pointer hover:border-[#0a84ff] duration-300 ">
+                    class="w-full sm:w-[48%] lg:w-[31%] border border-[#c7c6c6] bg-[#ffffff] py-8 md:py-10 px-6 md:px-8 rounded-xl cursor-pointer hover:border-[#0a84ff] duration-300 shadow-sm hover:shadow-md">
                     <div>
                         <img class="w-[35px]" src="assets/img/statistics.png" alt="statistics image">
                     </div>
-
                     <div class="info">
-                        <h5 class="font-[oswald] text-[20px] font-medium py-5">Global Scale
-                        </h5>
-                        <p>Auto-scaling infrastructure that handles millions of concurrent agent sessions.
-                        </p>
+                        <h5 class="font-[oswald] text-[18px] md:text-[20px] font-medium py-4 md:py-5">Global Scale</h5>
+                        <p class="text-[14px] md:text-base text-[#64748b]">Auto-scaling infrastructure that handles
+                            millions
+                            of concurrent agent sessions.</p>
                     </div>
                 </div>
+
             </div>
-        </div>
         </div>
     </section>
     <!-- !BUILD/SERVICE SECTION END -->
 
-
     <!-- !CLIENT SATISFACTION SECTION END -->
-    <section class="bg-black py-20">
-        <div class="max-w-[1200px] mx-auto! px-3.75">
-            <div class="flex items-center gap-5 justify-between">
+    <section class="bg-black py-12 md:py-20 px-4 md:px-0">
+        <div class="max-w-[1200px] mx-auto px-3.75">
+            <div class="flex flex-wrap items-center justify-center lg:justify-between gap-y-10 md:gap-5">
 
-                <div class="text-center">
-                    <h1 class="text-[60px] font-semibold font-[oswald]font text-[#0a84ff]">200Ms</h1>
-                    <span class="font-[Poppins] font-medium text-[18px text-[#8f8c8c] uppercase text-center">Avg.
-                        Response Time
-                    </span>
-                </div>
-
-                <div class="text-center">
-                    <h1 class="text-[60px] font-semibold font-[oswald]font text-[#bf5af2]">99.99%</h1>
-                    <span class="font-[Poppins] font-medium text-[18px text-[#8f8c8c] uppercase">Uptime Guarantee
-
-                    </span>
-                </div>
-
-                <div class="text-center">
-                    <h1 class="text-[60px] font-semibold font-[oswald]font text-[#0a84ff] uppercase">10B+
+                <div class="text-center w-1/2 lg:w-auto px-2">
+                    <h1 class="text-[40px] md:text-[60px] font-semibold font-[oswald] text-[#0a84ff] leading-none">200Ms
                     </h1>
-                    <span class="font-[Poppins] font-medium text-[18px text-[#8f8c8c] uppercase">Tokens Processed
-
+                    <span
+                        class="font-[Poppins] font-medium text-[12px] md:text-[18px] text-[#8f8c8c] uppercase block mt-2">
+                        Avg. Response Time
                     </span>
                 </div>
 
-                <div class="text-center">
-                    <h1 class="text-[60px] font-semibold font-[oswald]font text-[#bf5af2]">24/7
+                <div class="text-center w-1/2 lg:w-auto px-2">
+                    <h1 class="text-[40px] md:text-[60px] font-semibold font-[oswald] text-[#bf5af2] leading-none">
+                        99.99%
                     </h1>
-                    <span class="font-[Poppins] font-medium text-[18px text-[#8f8c8c] uppercase">Customer Support
+                    <span
+                        class="font-[Poppins] font-medium text-[12px] md:text-[18px] text-[#8f8c8c] uppercase block mt-2">
+                        Uptime Guarantee
                     </span>
                 </div>
+
+                <div class="text-center w-1/2 lg:w-auto px-2">
+                    <h1
+                        class="text-[40px] md:text-[60px] font-semibold font-[oswald] text-[#0a84ff] uppercase leading-none">
+                        10B+</h1>
+                    <span
+                        class="font-[Poppins] font-medium text-[12px] md:text-[18px] text-[#8f8c8c] uppercase block mt-2">
+                        Tokens Processed
+                    </span>
+                </div>
+
+                <div class="text-center w-1/2 lg:w-auto px-2">
+                    <h1 class="text-[40px] md:text-[60px] font-semibold font-[oswald] text-[#bf5af2] leading-none">24/7
+                    </h1>
+                    <span
+                        class="font-[Poppins] font-medium text-[12px] md:text-[18px] text-[#8f8c8c] uppercase block mt-2">
+                        Customer Support
+                    </span>
+                </div>
+
             </div>
         </div>
     </section>
     <!-- !CLIENT SATISFACTION SECTION END -->
 
     <!-- !PRICING SECTION END -->
-    <section class="py-28">
-        <div class="max-w-[1200px] mx-auto! px-3.75">
+    <section class="py-16 md:py-28 px-4 md:px-0 bg-white">
+        <div class="max-w-[1200px] mx-auto px-3.75">
             <div class="text-center">
-                <h1 class="font-[oswald] text-[55px] font-semibold text-black">Scale with <span
-                        class="text-[#bf5af2]">Confidence</span></h1>
-                <p class="text-[20px] font-[poppins] pt-4 w-[450px] mx-auto">Pay only for what you use. No hidden fees —
-                    full pricing transparency guaranteed.</p>
+                <h1 class="font-[oswald] text-[35px] md:text-[55px] font-semibold text-black leading-tight">
+                    Scale with <span class="text-[#bf5af2]">Confidence</span>
+                </h1>
+                <p class="text-[16px] md:text-[20px] font-[poppins] pt-4 w-full md:w-[450px] mx-auto text-gray-600">
+                    Pay only for what you use. No hidden fees — full pricing transparency guaranteed.
+                </p>
             </div>
-            <div class="flex items-center justify-center gap-8 mt-10">
 
-                <div class="w-[300px] border border-[#dad7d7] py-5 px-5 rounded-2xl bg-white">
-                    <h4 class="text-[25px] font-[oswald] font-medium">Developer</h4>
-                    <h1 class="font-[oswald] text-[35px] font-bold py-3">$0 <span
-                            class="text-[18px] font-normal text-[#6d6d6d]">/mo</span></h1>
+            <div class="flex flex-wrap items-stretch justify-center gap-6 md:gap-8 mt-10">
 
-                    <div class="benefit flex flex-col  gap-2">
-                        <div class="list flex items-center gap-1  ">
-                            <img class="w-[25px]" src="assets//icon//black.png" alt="">
-                            <p class="text-[15px] font-[poppins] font-normal">1,000 Agent Minutes
-                            </p>
+                <div
+                    class="w-full sm:w-[350px] border border-[#dad7d7] py-8 px-6 rounded-2xl bg-white flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-[22px] md:text-[25px] font-[oswald] font-medium">Developer</h4>
+                        <h1 class="font-[oswald] text-[30px] md:text-[35px] font-bold py-3">$0 <span
+                                class="text-[18px] font-normal text-[#6d6d6d]">/mo</span></h1>
+
+                        <div class="benefit flex flex-col gap-3">
+                            <div class="list flex items-center gap-2">
+                                <img class="w-[20px]" src="assets//icon//black.png" alt="check">
+                                <p class="text-[14px] md:text-[15px] font-[poppins]">1,000 Agent Minutes</p>
+                            </div>
+                            <div class="list flex items-center gap-2">
+                                <img class="w-[20px]" src="assets//icon//black.png" alt="check">
+                                <p class="text-[14px] md:text-[15px] font-[poppins]">Community Support</p>
+                            </div>
+                            <div class="list flex items-center gap-2">
+                                <img class="w-[20px]" src="assets//icon//black.png" alt="check">
+                                <p class="text-[14px] md:text-[15px] font-[poppins]">Standard Inference</p>
+                            </div>
+                            <div class="list flex items-center gap-2">
+                                <img class="w-[20px]" src="assets//icon//black.png" alt="check">
+                                <p class="text-[14px] md:text-[15px] font-[poppins]">Basic Memory</p>
+                            </div>
                         </div>
-
-                        <div class="list flex items-center gap-1  ">
-                            <img class="w-[25px]" src="assets//icon//black.png" alt="">
-                            <p class="text-[15px] font-[poppins] font-normal">Community Support
-                            </p>
-                        </div>
-
-                        <div class="list flex items-center gap-1  ">
-                            <img class="w-[25px]" src="assets//icon//black.png" alt="">
-                            <p class="text-[15px] font-[poppins] font-normal">Standard Inference
-
-                            </p>
-                        </div>
-
-                        <div class="list flex items-center gap-1  ">
-                            <img class="w-[25px]" src="assets//icon//black.png" alt="">
-                            <p class="text-[15px] font-[poppins] font-normal">Basic Memory
-
-                            </p>
-                        </div>
-                        <a href="#"
-                            class="font-[Poppins] text-[18px] mt-6 font-medium border border-black py-2 px-3 rounded-full hover:bg-black hover:text-white duration-300 ease-in-out flex items-center justify-center gap-2 hover:gap-3 w-[140px] ">Get
-                            Started
-                        </a>
                     </div>
-
+                    <a href="#"
+                        class="font-[Poppins] text-[16px] md:text-[18px] mt-8 font-medium border border-black py-2.5 px-4 rounded-full hover:bg-black hover:text-white duration-300 ease-in-out flex items-center justify-center gap-2 w-[150px]">
+                        Get Started
+                    </a>
                 </div>
 
-                <div class="w-[300px] border border-[#dad7d7] py-5 px-5 rounded-2xl bg-black">
-                    <h4 class="text-[25px] font-[oswald] font-medium text-white">Pro
-                    </h4>
-                    <h1 class="font-[oswald] text-[35px] font-bold py-3 text-white">$99 <span
-                            class="text-[18px] font-normal text-[#6d6d6d]">/mo</span></h1>
+                <div
+                    class="w-full sm:w-[350px] border border-[#dad7d7] py-8 px-6 rounded-2xl bg-black text-white flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-[22px] md:text-[25px] font-[oswald] font-medium">Pro</h4>
+                        <h1 class="font-[oswald] text-[30px] md:text-[35px] font-bold py-3">$99 <span
+                                class="text-[18px] font-normal text-[#6d6d6d]">/mo</span></h1>
 
-                    <div class="benefit flex flex-col  gap-2">
-                        <div class="list flex items-center gap-1  ">
-                            <img class="w-[25px]" src="assets/icon/blue.png" alt="">
-                            <p class="text-[15px] font-[poppins] font-normal text-[#d4d1d1]">50,000 Agent Minutes
-                            </p>
+                        <div class="benefit flex flex-col gap-3">
+                            <div class="list flex items-center gap-2">
+                                <img class="w-[20px]" src="assets/icon/blue.png" alt="check">
+                                <p class="text-[14px] md:text-[15px] font-[poppins] text-[#d4d1d1]">50,000 Agent Minutes
+                                </p>
+                            </div>
+                            <div class="list flex items-center gap-2">
+                                <img class="w-[20px]" src="assets/icon/blue.png" alt="check">
+                                <p class="text-[14px] md:text-[15px] font-[poppins] text-[#d4d1d1]">Priority Support</p>
+                            </div>
+                            <div class="list flex items-center gap-2">
+                                <img class="w-[20px]" src="assets/icon/blue.png" alt="check">
+                                <p class="text-[14px] md:text-[15px] font-[poppins] text-[#d4d1d1]">Edge Inference</p>
+                            </div>
+                            <div class="list flex items-center gap-2">
+                                <img class="w-[20px]" src="assets/icon/blue.png" alt="check">
+                                <p class="text-[14px] md:text-[15px] font-[poppins] text-[#d4d1d1]">Advanced Memory</p>
+                            </div>
                         </div>
-
-                        <div class="list flex items-center gap-1  ">
-                            <img class="w-[25px]" src="assets/icon/blue.png" alt="">
-                            <p class="text-[15px] font-[poppins] font-normal text-[#d4d1d1]">Priority Support
-
-                            </p>
-                        </div>
-
-                        <div class="list flex items-center gap-1  ">
-                            <img class="w-[25px]" src="assets/icon/blue.png" alt="">
-                            <p class="text-[15px] font-[poppins] font-normal text-[#d4d1d1]">Edge Inference
-                            </p>
-                        </div>
-
-                        <div class="list flex items-center gap-1  ">
-                            <img class="w-[25px]" src="assets/icon/blue.png" alt="">
-                            <p class="text-[15px] font-[poppins] font-normal text-[#d4d1d1]">Advanced Memory
-                            </p>
-                        </div>
-                        <a href="#"
-                            class="font-[Poppins] text-[18px] mt-6 font-medium border border-black py-2 px-3 rounded-full bg-white hover:bg-black hover:text-white hover:border-white duration-300 ease-in-out flex items-center justify-center gap-2 hover:gap-3 w-[140px] ">Get
-                            Started
-                        </a>
                     </div>
-
+                    <a href="#"
+                        class="font-[Poppins] text-[16px] md:text-[18px] mt-8 font-medium border border-white py-2.5 px-4 rounded-full bg-white text-black hover:bg-transparent hover:text-white duration-300 ease-in-out flex items-center justify-center gap-2 w-[150px]">
+                        Get Started
+                    </a>
                 </div>
 
-                <div class="w-[300px] border border-[#dad7d7] py-5 px-5 rounded-2xl ">
-                    <h4 class="text-[25px] font-[oswald] font-medium">Enterprise
-                    </h4>
-                    <h1 class="font-[oswald] text-[35px] font-bold py-3">Custom
-                    </h1>
+                <div
+                    class="w-full sm:w-[350px] border border-[#dad7d7] py-8 px-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-[22px] md:text-[25px] font-[oswald] font-medium">Enterprise</h4>
+                        <h1 class="font-[oswald] text-[30px] md:text-[35px] font-bold py-3">Custom</h1>
 
-                    <div class="benefit flex flex-col  gap-2">
-                        <div class="list flex items-center gap-1  ">
-                            <img class="w-[25px]" src="assets//icon//black.png" alt="">
-                            <p class="text-[15px] font-[poppins] font-normal">Unlimited Scale 
-                            </p>
+                        <div class="benefit flex flex-col gap-3">
+                            <div class="list flex items-center gap-2">
+                                <img class="w-[20px]" src="assets//icon//black.png" alt="check">
+                                <p class="text-[14px] md:text-[15px] font-[poppins]">Unlimited Scale</p>
+                            </div>
+                            <div class="list flex items-center gap-2">
+                                <img class="w-[20px]" src="assets//icon//black.png" alt="check">
+                                <p class="text-[14px] md:text-[15px] font-[poppins]">Dedicated Support</p>
+                            </div>
+                            <div class="list flex items-center gap-2">
+                                <img class="w-[20px]" src="assets//icon//black.png" alt="check">
+                                <p class="text-[14px] md:text-[15px] font-[poppins]">Custom Models</p>
+                            </div>
+                            <div class="list flex items-center gap-2">
+                                <img class="w-[20px]" src="assets//icon//black.png" alt="check">
+                                <p class="text-[14px] md:text-[15px] font-[poppins]">SLA Guarantees</p>
+                            </div>
                         </div>
-
-                        <div class="list flex items-center gap-1  ">
-                            <img class="w-[25px]" src="assets//icon//black.png" alt="">
-                            <p class="text-[15px] font-[poppins] font-normal">Dedicated Support
-                            </p>
-                        </div>
-
-                        <div class="list flex items-center gap-1  ">
-                            <img class="w-[25px]" src="assets//icon//black.png" alt="">
-                            <p class="text-[15px] font-[poppins] font-normal">Custom Models
-
-                            </p>
-                        </div>
-
-                        <div class="list flex items-center gap-1  ">
-                            <img class="w-[25px]" src="assets//icon//black.png" alt="">
-                            <p class="text-[15px] font-[poppins] font-normal">SLA Guarantees
-
-                            </p>
-                        </div>
-                        <a href="#"
-                            class="font-[Poppins] text-[18px] mt-6 font-medium border border-black py-2 px-3 rounded-full hover:bg-black hover:text-white duration-300 ease-in-out flex items-center justify-center gap-2 hover:gap-3 w-[140px] ">Get
-                            Started
-                        </a>
                     </div>
-
+                    <a href="#"
+                        class="font-[Poppins] text-[16px] md:text-[18px] mt-8 font-medium border border-black py-2.5 px-4 rounded-full hover:bg-black hover:text-white duration-300 ease-in-out flex items-center justify-center gap-2 w-[150px]">
+                        Get Started
+                    </a>
                 </div>
+
             </div>
         </div>
     </section>
     <!-- !PRICING SECTION END -->
 
-    <!-- ! SECTION END -->
-    <!-- ! SECTION END -->
+    <!-- !GET STARTED SECTION END -->
+    <section>
+        <div class="max-w-[1200px] mx-auto px-3.75">
+            <div
+                class="text-center bg-[linear-gradient(131deg,rgba(32,131,255,1)_13%,rgba(181,96,243,1)_60%)] py-[135px] rounded-[35px]">
+                <h1 class="text-[75px] font-bold font-[oswald] text-white w-[550px] leading-[100px] mx-auto">Build the
+                    future
+                    with Nexus.</h1>
+                <p class="text-[18px] text-white font-[poppins] w-[500px] mx-auto py-3">Start deploying autonomous agents in
+                    minutes. No credit card required.
+                </p>
+                <div class="flex items-center gap-4 justify-center mt-4">
+                    <a href="#" class="font-[oswald] font-medium text-[18px] bg-white text-black py-4 px-6 rounded-[30px] inline-block  mt-2 ">Get Started Free</a>
+                    <a href="#" class="font-[oswald] font-medium text-[18px] bg-[#7b53be] text-white py-4 px-6 rounded-[30px] inline-block  mt-2 ">Get Started Free</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- !GET STARTED SECTION END -->
 </body>
 
 </html>
